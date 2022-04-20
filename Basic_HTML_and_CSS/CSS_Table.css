@@ -1,0 +1,14 @@
+table {
+		border: 10px double crimson;
+		color: goldenrod
+}
+
+td:hover {
+		background-color: gray;
+		color: goldenrod;
+}
+
+tr, td {
+		background-color: black;
+		color: dark gray;
+}

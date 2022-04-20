@@ -1,0 +1,13 @@
+p {
+	color: deeppink;
+	border: 10px ridge cyan;
+	background-color: #7FFF00;
+	padding: 5px;
+	font-family:"Comic Sans MS";
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	}
+h2 {
+  text-shadow: 2px 2px #FF0000;
+}
