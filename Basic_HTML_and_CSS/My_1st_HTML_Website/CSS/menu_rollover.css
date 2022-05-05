@@ -1,0 +1,92 @@
+
+body {
+    background: #2932AE;
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.menu-container {
+    top: 0;
+    left: 0;
+    /* To the top edge of the screen */
+    position: absolute;
+    width: 100%;
+    background-color: #2932AE;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0%;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+}
+
+/* color of nav bar */
+.menu li {
+    color: whitesmoke;
+    background-color: #FFA500;
+    display: inline-block;
+    margin: 0% auto;
+    /* margin-right: -2px; */
+    position: relative;
+    padding: 15px 4%;
+    /* padding: 12px 40px; */
+    border: 1px solid #E6DBC3;
+    /* box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px; */
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive;
+    font-size: medium;
+    /* transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out; */
+}
+
+.menu li:hover {
+    background-color: #C10290;
+    color: #FFA500;
+    font-family: 'Comfortaa', cursive;
+    }
+
+.menu li:hover ul {
+    display: block;
+    opacity: 1;
+    /* While hovered, drop down-menu appears
+    This also avoids a block-level bug */
+    visibility: visible;
+}
+
+.submenu {
+    padding: 4%;
+    left: 0%;
+    position: absolute;
+    top: 43.5px;
+    width: relative;
+    opacity: 0;
+    /* While not being hovered, drop down-menu hides
+    This also avoids a block-level bug */
+    visibility: hidden;
+}
+
+.submenu li {
+    background-color: #5eafdf ;
+    display: block;
+    color: #348B08;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.submenu li:hover {
+    color: whitesmoke;
+    background-color: #80FF40;
+}

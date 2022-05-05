@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>My Kids' 2020s | Timecapsule</title>
+		<title>Kids' 2020s | Timecapsule</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/photo_style.css">
+		<link rel="stylesheet" href="./css/menu_rollover.css">-->
+		<link rel="stylesheet" href="./CSS/shared.css">
+        <!--<link rel="stylesheet" href="./css/animations.css"> -->             
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico"></link>       
+        <!-- EMBEDDED GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa&family=Kanit:wght@600&family=Staatliches&family=Ultra&display=swap" rel="stylesheet">
+        
 	</head>
 	<body>
-	
+	<center>
 		<!--NAV-->
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home"><li>HOME</li></a>
-					<a href="#games"><li>GAMES</li></a>
-					<a href="#toys"><li>TOYS</li></a>
-					<a href="#shows-movies"><li>SHOWS-MOVIES</li></a>
-					<a href="#people"><li>PEOPLE</li></a>
-					<a href="#music"><li>MUSIC</li></a>
-					<a href="#food"><li>FOOD</li></a>
+					<li>TIMECAPSULE
+						<ul class="submenu">
+							<a href="#games"><li>GAMES</li></a>
+							<a href="#toys"><li>TOYS</li></a>
+							<a href="#shows-movies"><li>SHOWS-MOVIES</li></a>
+							<a href="#people"><li>PEOPLE</li></a>
+							<a href="#music"><li>MUSIC</li></a>
+							<a href="#food"><li>FOOD</li></a>
+						</ul>
+					</li>
 					<a href="#contribute"><li>CONTRIBUTE</li></a>
+					<a href="#about"><li>ABOUT</li></a>
 				</ul>
+			</div>
+		</div>
 		<!--END NAV-->
 		
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<div>
-					<span>2020s <em>Kids</em> Timecapsule</span>
-					<p>This pages began <time datetime="2022-04-24 19:35"> one month before the end of school in 2022.</time>
-					</p>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">KiDS TiMeCAPSULe <em>2020s</em></span>
 					<header>
-						<h1>All Things Kids in the 2020s</h1>
-						<article>
-							<h2>Generation Alpha</h2>
-							<p>The term Generation Alpha refers to the group of individuals born between 2010 and 2025.</article>
-						<p>Documented memories for							<details>
-							<summary>these Generation Alpha kids:</summary>
-							<p>my sons, Russell & Rowen
-							</details>
-						</p>
+						<h1><em>Kids Favorites from the 2020s Decade</em></h1>
 					</header>
 				</div>
 			</div>
 		</div>
 		<!--END HOME-->
 		
+		<!--ABOUT-->
+		<div id="about">
+			<div class="container">
+				<div class="text-center">
+					<h1>About</h1>
+					<h3><em>I created this website for my sons, Russell and Rowen, both of Generation Alpha. 
+					<br>I hope this will bring back fond memories of their childhood.</em></h3>
+					<img src="../My_1st_HTML_Website/images/theboys.jpeg" width="220px" height="300px" border="3"  alt="Russell & Rowen">
+					<br>
+					<br>
+					<h2>More information about Gen Alpha:</h2>
+					<br>	
+						<article>
+						<details>
+						<summary>Click the arrow for a Generation Alpha fact:</summary>
+						<p>Gen Alpha refers to those born between 2010 and 2025
+						</details>
+						</article>
+					<p><iframe width="360" height="215" src="https://www.youtube.com/embed/TJbCgUQcj-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				</div>
+			</div>
+		</div>
+
 		<!--GAMES-->
-		<section>
-			<div id="games">
+		<section id="games">
+			<div class="container">
 				<h1>Games &#127918;</h1>
 				<h2>A collection of Russell and Rowen's favorite games from the 2020s!</h2>
-				<a href="https://www.runnersworld.com/gear/g37772427/top-family-board-games/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_rnw_d_bm_comm_lft_us_g37772427&gclid=Cj0KCQjw6pOTBhCTARIsAHF23fLhFy_CcJCrISvZiZ-KunvNppcgy3DlFZCJOmSHY5uSxcGI8lQ3kQsaAsqiEALw_wcB" target="new">Best Family Games of 2021</a>
+				<br>
 			</div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -55,8 +87,8 @@
 						<div class="photo">
 						<img src="./images/Games/thumb/thumbnail_1.jpg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Fortnite</p></div>
+								<h3 class="white-head">Fortnite</h3>
+								<p>Click to Enlarge</p></div>
 							</div>
 						</div>
 					</div>
@@ -67,8 +99,8 @@
 						<div class="photo">
 						<img src="./images/Games/thumb/thumbnail_2.jpg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Taco Cat Goat Cheese Pizza</p>
+								<h3 class="white-head">Taco Cat Goat Cheese Pizza</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -79,8 +111,8 @@
 						<div class="photo">
 						<img src="./images/Games/thumb/thumbnail_3.jpg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Roblox Bee Swarm Simulator</p>
+								<h3 class="white-head">Roblox Bee Swarm Simulato</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -94,7 +126,7 @@
 			<div id="toys">
 				<h1>Toys &#129664;</h1>
 				<h2>A collection of Russell and Rowen's favorite toys from the 2020s!</h2>
-
+				<br>
 				<div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -102,8 +134,8 @@
 						<div class="photo">
 						<img src="./images/Toys/thumb/thumbnail_1.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Facebook Messenger Kids</p>
+								<h3 class="white-head">Facebook Messenger Kids</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -114,8 +146,8 @@
 						<div class="photo">
 						<img src="./images/Toys/thumb/thumbnail_2.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Pop-Its</p>
+								<h3 class="white-head">Pop-Its</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -131,7 +163,7 @@
 			<div id="shows-movies">
 				<h1>Shows & Movies &#128250;</h1>
 				<h2>A collection of Russell and Rowen's favorite shows and movies from the 2020s!</h2>
-
+				<br>
 				<div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -139,8 +171,8 @@
 						<div class="photo">
 						<img src="./images/Shows-Movies/thumb/thumbnail_1.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Aphmau on YouTube</p>
+								<h3 class="white-head">Aphmau on YouTube</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -151,8 +183,8 @@
 						<div class="photo">
 						<img src="./images/Shows-Movies/thumb/thumbnail_2.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Sonic 2</p>
+								<h3 class="white-head">Sonic 2</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -168,7 +200,7 @@
 			<div id="people">
 				<h1>People &#128378;</h1>
 				<h2>A collection of Russell and Rowen's favorite people from the 2020s!</h2>
-
+				<br>
 				<div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -176,8 +208,8 @@
 						<div class="photo">
 						<img src="./images/People/thumb/thumbnail_1.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Mark Roeber from YouTube</p>
+								<h3 class="white-head">Mark Roeber from YouTube</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -188,8 +220,8 @@
 						<div class="photo">
 						<img src="./images/People/thumb/thumbnail_2.webp" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Dude Perfect from YouTube</p>
+								<h3 class="white-head">Dude Perfect from YouTube</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -200,8 +232,8 @@
 						<div class="photo">
 						<img src="./images/People/thumb/thumbnail_3.jpg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Preston Playz and Unspeakable from YouTube</p>
+								<h3 class="white-head">Preston Playz and Unspeakable from YouTube</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -217,7 +249,7 @@
 			<div id="music">
 				<h1>Music &#127925;</h1>
 				<h2>A collection of Russell and Rowen's favorite music from the 2020s!</h2>
-
+				<br>
 				<div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -225,39 +257,51 @@
 						<div class="photo">
 						<img src="./images/Music/thumb/thumbnail_1.jpeg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Chicken Nugget Dreamland by Parry Gripp</p>
+								<h3 class="white-head">Chicken Nugget Dreamland by Parry Gripp</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 1-->
+						<!--music that goes with this picure-->
+						<div class="photo">
+							<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/28B9XbCYSlAUQhepP4tQw7?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>						
+						</div>	
+						<!--end of accompanying music-->
 				
 					<!--PHOTO-CONTAINER 2-->
 					<div class="photo-container">
 						<div class="photo">
 						<img src="./images/Music/thumb/thumbnail_2.jpeg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Bim Bam Toi from Fortnite by Carla Lazzari</p>
+								<h3 class="white-head">Bim Bam Toi from Fortnite by Carla Lazzari</h3>
+								<p>Click to Enlarge</p>
 							</div>
-						<p>
-						<iframe width="360" height="240" src="https://www.youtube.com/embed/Yf58rjtvxv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</p>
 						</div>
 					</div>
+					<br>
 					<!--END PHOTO-CONTAINER 2-->
+						<!--music that goes with this picure-->
+						<div class="photo">
+							<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/33NTeQz7sVYLmkJ1k8GsVR?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+						</div>
+						<!--end of accompanying music-->
 					
 					<!--PHOTO-CONTAINER 3-->
 					<div class="photo-container">
 						<div class="photo">
 						<img src="./images/Music/thumb/thumbnail_3.jpeg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>Speed Me Up from Sonic the Hedgehog by Wiz Khalifa, Juice Wrld, Oliver Tree, Lil Yachty, Ty Dolla &#36;ign &#38; Sueco the Child</p>
+								<h3 class="white-head">Speed Me Up from Sonic the Hedgehog by Wiz Khalifa, Juice Wrld, Oliver Tree, Lil Yachty, Ty Dolla &#36;ign &#38; Sueco the Child</h3>
+								<p>Click to Englarge</p>
 							</div>
 						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 3-->
+						<!--music that goes with this picure-->
+						<div class="photo">
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/15eWNa3kpCPKILbSvvzSWl?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>						</div>
+						<!--end of accompanying music-->
 					
 				</div>
 			</div>
@@ -269,7 +313,7 @@
 			<div id="food">
 				<h1>Food &#127828</h1>
 				<h2>A collection of Russell and Rowen's favorite food from the 2020s!</h2>
-
+				<br>
 				<div>
 				
 					<!--PHOTO-CONTAINER 1-->
@@ -277,8 +321,8 @@
 						<div class="photo">
 						<img src="./images/Food/thumb/thumbnail_1.jpeg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>taquitos from 7&#47;11</p>
+								<h3 class="white-head">taquitos from 7&#47;11</h3>
+								<p>Click to Enlarge</p>
 							</div>
 						</div>
 					</div>
@@ -289,8 +333,8 @@
 						<div class="photo">
 						<img src="./images/Food/thumb/thumbnail_2.jpeg" alt="">
 							<div class="photo-overlay">
-								<h3 class="white-head">Click to Englarge</h3>
-								<p>orange chicken from Panda Express</p>
+								<h3 class="white-head">Panda Express orange chicken</h3>
+								<p>Click to Englarge</p>
 							</div>
 						</div>
 					</div>
@@ -302,53 +346,44 @@
 		<!--END FOOD-->
 		
 		<!--CONTRIBUTE-->
-		<section>	
-			<div id="contribute">
-				<div>
-					<!--PHOTO-CONTAINER 1-->
+		<section id="contribute">	
+		<!--	<div class="heading-padding">
+				<p class="contribute-text">
+				<h1 class="heading-padding"> -->
+			<div class="container">
+				<h1>Contribute your favorites!</h1>
+				<h3>Did we miss something? No fear, Russell & Rowen...</h3>
+				<h2>Add more of your favorites here!</h2>
+				<br>
+				<br>
 					<div>
-						<div>
-							<div>
-								<h3>Click to Englarge</h3>
-								<p>Russell & Rowen can add more of their favorites!</p>
+						<form action="" method="post">
+							<input class="contribute" type="text" value="" placeholder="GAMES">
+							<input class="contribute" type="text" value="" placeholder="TOYS">
+							<input class="contribute" type="text" value="" placeholder="SHOWS-MOVIES">
+							<input class="contribute" type="text" value="" placeholder="PEOPLE">
+							<input class="contribute" type="text" value="" placeholder="MUSIC">
+							<input class="contribute" type="text" value="" placeholder="FOOD">
+							<div class="form-spacer">
+								<!-- <label class="reminder">A Reminder</label> -->
 							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 1-->
-					
-					<h1>Conribute your favorites!</h1>
-					<div>
-						<h2><span>Did we miss something?</span>
-							<br />No fear, you can add more!
-						</h2>
-						<p>
-							Submit your favorites here:
-						</p>
-						<div>
-							<form action="" method="post">
-								<input class="favorite" type="text" value="GAMES">
-								<input class="favorite" type="text" value="TOYS">
-								<input class="favorite" type="text" value="SHOWS/GAMES">
-								<input class="favorite" type="text" value="PEOPLE">
-								<input class="favorite" type="text" value="MUSIC">
-								<input class="favorite" type="text" value="FOOD">
-								<div class="form-spacer">
-									<label class="reminder">A Reminder</label>
-								</div>
-								<div>
-									<input type="submit value="Submit">
-								</div>
-							</form>
-						</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							<br>
+							<br>
+							<br>
+							<br>
+							</div>
+						</form>
 					</div>
 				</div>
-			</div>
 		</section>
 		<!--END CONTRIBUTE-->
 		
 		<!--FOOTER-->
-		<div>
+		<div id="footer">
 			www.2020skidstimecapsule.com &nbsp;|&nbsp &copy; 2022
+			<br>This page was created <time datetime="2022-04-24 19:35"> in April 2022.</time>
 		</div>
 		<!--END FOOTER-->
 	
