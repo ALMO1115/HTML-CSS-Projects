@@ -1,0 +1,11 @@
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+.input {
+    width: 200px;
+    margin: 0%;
+    border: 5px double cornflowerblue;
+    border-radius: 50px 20px;
+}
