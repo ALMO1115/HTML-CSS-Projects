@@ -1,0 +1,92 @@
+ARTISTIC
+Arima
+Shadows Into Light
+Indie Flower
+Permanent Marker
+Gloria Hallelujah
+Sarina
+Libre Barcode 39 Extended Text
+WindSong
+
+GOOFY
+Fredoka One
+Bangers
+Patrick Hand
+Press Start 2P
+Mali
+Kranky
+Mochiy Pop One
+Londrina Outline
+Unkempt
+
+MODERN
+Josefin Sans
+Varel Round
+Comfortaa
+Abril Fatface
+
+OLD-FASHIONED
+Playfair Display
+Source Code Pro
+M PLUS 1 Code
+Abril Fatface
+Lobster Two
+Ribeye
+Bellota
+
+PROFESSIONAL
+Gentium Book Plus
+Nanum Myeongjo
+
+
+
+/* FONT OPTIONS ******
+ARTISTIC
+    font-family: 'Arima', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Indie Flower', cursive; 
+    font-family: 'Permanent Marker', cursive;    
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Sarina', cursive;    
+    font-family: 'Libre Barcode 39 Extended Text', cursive;    
+    font-family: 'WindSong', cursive;
+
+GOOFY
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Patrick Hand', cursive;    
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Mali', cursive;    
+    font-family: 'Kranky', cursive; 
+    font-family: 'Mochiy Pop One', sans-serif;     
+    font-family: 'Londrina Outline', cursive;      
+    font-family: 'Unkempt', cursive;
+
+MODERN
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Abril Fatface', cursive;
+
+OLD-FASHIONED
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Lobster Two', cursive;    
+    font-family: 'Ribeye', cursive;
+    font-family: 'Bellota', cursive;
+
+PROFESSIONAL
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Nanum Myeongjo', serif;        
+*/
+
+
+
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arima:wght@300&family=Bangers&family=Bellota&family=Comfortaa&family=Fredoka+One&family=Gentium+Book+Plus&family=Gloria+Hallelujah&family=Indie+Flower&family=Josefin+Sans&family=Kranky&family=Libre+Barcode+39+Extended+Text&family=Lobster+Two&family=Londrina+Outline&family=M+PLUS+1+Code&family=Mali&family=Mochiy+Pop+One&family=Nanum+Myeongjo&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display&family=Press+Start+2P&family=Ribeye&family=Sarina&family=Shadows+Into+Light&family=Source+Code+Pro:wght@500&family=Unkempt&family=Varela+Round&family=WindSong:wght@500&display=swap" rel="stylesheet">

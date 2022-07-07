@@ -1,0 +1,98 @@
+/***** GENERAL STYLING *****/
+
+/* FONT OPTIONS ******
+ARTISTIC
+    font-family: 'Arima', cursive;
+    font-family: 'Shadows Into Light', cursive; ------ dont love
+    font-family: 'Indie Flower', cursive; 
+    font-family: 'Permanent Marker', cursive;    
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Sarina', cursive; ----- more casual script    
+    font-family: 'Libre Barcode 39 Extended Text', cursive; ----- barcode text   
+    font-family: 'WindSong', cursive; ----- very scripty
+    font-family: 'Edu NSW ACT Foundation', cursive;     
+
+GOOFY
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Patrick Hand', cursive;    
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Mali', cursive;    
+    font-family: 'Kranky', cursive; 
+    font-family: 'Mochiy Pop One', sans-serif;     
+    font-family: 'Londrina Outline', cursive;      
+    font-family: 'Unkempt', cursive;
+
+MODERN
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Abril Fatface', cursive;
+
+OLD-FASHIONED
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Lobster Two', cursive;    
+    font-family: 'Ribeye', cursive;
+    font-family: 'Bellota', cursive;
+
+PROFESSIONAL
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Nanum Myeongjo', serif;        
+*/
+
+
+
+h1 {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3%;
+    color: rgb(76, 10, 150);
+    font-kerning: 25px;
+}
+
+#dingbat { 
+    font-size: 40px;
+    color: rgb(245, 69, 15);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Sarina', cursive;        
+    font-size: 40px;
+    color: rgb(113, 20, 220);
+    text-align: center;
+}
+
+p {
+    font-family: 'Edu NSW ACT Foundation', cursive; 
+    font-size: 20px;
+    text-align: justify;
+}
+
+h3 {
+    font-family: 'Sarina', cursive;        
+    color: rgb(245, 69, 15);
+    font-size: 25px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(113, 20, 220); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+li {
+    font-family: 'Edu NSW ACT Foundation', cursive;   
+}
