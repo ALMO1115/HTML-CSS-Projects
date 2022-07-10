@@ -1,0 +1,438 @@
+/*HTML*/
+
+
+    html {
+        scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
+    }
+
+
+
+/*NAVIGATION BAR*/
+
+    .Nav_Bar {
+        overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+        background-color: black; /* This colors the navbar black */
+        position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+        top: 0; /* This ensures no space is displayed above the navbar */
+        width: 100%; /* This makes the navbar span the entire width of the page */
+        z-index: 1; /* This ensures other elements don't display over the navbar */
+        -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+        animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+    }
+
+    /* moveNav animation effect for moving the nav bar in from the left of the screen */
+    @keyframes moveNav {
+        from {left: -100vw;} /* The navbar is starting off screen to the left */
+        to {left: 0vw;} /* This moves the navbar into place on the screen */
+    }
+
+    /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
+    @keyframes moveNavText {
+        from {top: -100vw;} /* This sets the navbar text 100% above the viewport */
+        to {top: 0vw;} /* This lowers the navbar text onto the navbar */
+    }
+
+    /* Screens 576px and smaller will display navbar links equally distributed */
+    @media screen and (max-width: 576px) {
+        .Nav_Bar a{
+            width: 25%; /* This makes each link take up 1/4 of the navbar */
+            font-size: 12px;
+        }
+    }
+
+    /* Navbar links/anchors */
+    .Nav_Bar a {
+        float: left; /* This specifies that the text floats on the left on the navbar */
+        display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+        color: white; /* This is the font color for text on our navbar */
+        padding: 14px 16px; /* This adds padding around our text */
+        text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
+        font-family: 'Zen Loop', cursive;
+        /* font-family: 'El Messiri', sans-serif; */
+        font-size: 30px; /* This specifies the font size for text on our navbar */
+        text-align: center; /* This centers the text within its container */
+        position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+        -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+        animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
+    }
+
+    /* Navbar hover effects */
+    .Nav_Bar a:hover {
+        background-color: #B3FF00; /* Defines the background color that will display when you hover over the link */
+        color: black; /* This defines the font color that will display when navbar a elements are hovered over */
+        font-weight: bold; /* This makes the text on the navbar bold when hovered over */
+        cursor: pointer;
+    }
+
+    /* Navbar home button */
+    .Nav_Bar a.active { /* This targets the a element on the navbar with the "active" class */
+        background-color: #7700ff;
+    }
+
+
+
+/*BODY*/
+
+    body {
+        margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+        opacity: 1; /* This and transition affect the page loading fade in effect */
+        transition: 3s opacity; /* This causes a 3 second fade in */
+        letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
+        /*? font-size: 1.5vw; */ 
+        /*? overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
+        /*? user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
+    }
+
+    /* This section contributes to the fade effect for the page that occurs when the page is loaded */
+    body.Fade_Out {
+        opacity: .1; /* This sets the level of opacity at the start of page load */
+    }
+
+    h1 { /*headers*/
+        text-transform: uppercase; /*capitalizing all h1 headings */
+        font-family: 'Comfortaa', cursive;
+        /*font-style: bold;*/
+        text-align: center;
+        margin-top: 3%;
+        color: black; 
+    }
+
+   /* h2 {
+        font-family: 'Comfortaa', cursive;
+        font-style: bold;
+        text-align: center;
+        margin-top: 3%;
+        color: #7700ff;
+        background-color: black;
+    }*/
+        
+    .Header_Text { /*"logo" of my website name*/
+        font-family: 'Zen Loop', cursive;
+        font-style: bold;
+        font-size: 60px;
+        color: black;
+        text-shadow: 1px 1px 2px #b3ff00, 0 0 25px #7700ff, 0 0 5px white;
+    }
+
+
+    p { /*body text*/
+        font-family: 'Zen Loop', cursive;
+        text-align: justify; /* Justify text within paragraph elements */
+        /*? letter-spacing: 1px; */
+        letter-spacing: .1vw; /* This expands the text slightly */
+        /*? font-size: 30px;
+        padding-left: 20px; /* Adds padding to the left of the paragraph element 
+        padding-right: 20px; /* Adds padding to the right of the paragraph element */
+        font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
+        padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
+        padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
+    }
+
+    .Center {
+        text-align: center; /* This center aligns the text */
+    }
+
+
+
+/* ANCHOR/LINK ELEMENTS*/
+
+    a.Body_Links {
+        color:black;
+        cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
+        text-decoration: underline; /* This ensures all links are underlined */
+    }
+
+    a.Body_Links:hover {
+        color: black;
+        background-color: #B3FF00;
+        /*text-shadow: 1px 1px 2px rgb(111, 0, 255), 2px 2px 12px rgba(0, 255, 234), 0 0 5px white;*/
+    }
+
+    /*p.Quote {
+        font-style: italic;
+        font-size: 25px;
+        color: black;
+        font-family: 'Comfortaa', cursive;
+    }*/
+
+
+
+/*IMAGES*/
+
+    #Regular_Images { /*effects all images not in slideshow*/
+        /*object-fit: contain;
+        /*object-position: center;
+        /*float: right;*/
+        border-radius: 10px 50px; 
+        /*width: 35%; /* This ensures the column takes up half of the page width */
+        padding: 10px;
+        /*padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+        margin-top: 7%;
+        /*display: inline-block;*/
+        position: relative; 
+        overflow: hidden; 
+        height: 350px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+        /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        /*filter: grayscale(100%);*/
+        background-color: #B3FF00;
+        /*border-top-left-radius: 50% 50%; 
+        border-top-right-radius: 50% 50%; 
+        border-bottom-right-radius: 50% 50%; 
+        border-bottom-left-radius: 50% 50%;
+        display: inline-block; 
+        position: relative; 
+        width: 80%; 
+        height: auto; 
+        overflow: hidden; 
+        border-radius: 50%;
+        border: #7700ff double 10px;*/
+    }
+
+    /* ?????????
+    /* Screens 576px and smaller will display images equally distributed */
+    @media screen and (max-width: 576px) {
+        #Regular_Images{
+            width: 25%; /* This makes each link take up 1/4 of the window */
+            font-size: 12px;
+        }
+    }
+
+
+/*VIDEO*/
+
+    #UIUX_Video {
+        position: fixed; /* This fixes the video to the page */
+        right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+        bottom: 0; /* This ensures no space between the edge of the video and the bottom of the page */
+        min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+        z-index: -1; /* This places the video behind the other elements on the page */
+    }
+
+    @media screen and (max-width: 576px) {
+        #UIUX_Video {
+            display: none;
+        }
+    }
+
+    /* ??????????????????????????????
+    /* Texts over the video
+    .Video_Header_Text { /* This provides a semi-transparents background for the text to sit over
+        background:#7700ff /*rgba(0, 255, 234, 0.3);
+        color: black; /* Makes the font color white
+        width: 80%;
+        height: ;
+        /*width: 100%; /* Ensures the video-text container fills the width of the video
+        /*height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
+        /*? padding: 20px;
+        padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text
+        position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below
+        border-radius: 10px 50px;
+        -webkit-animation: swipeHeader 5.75s;
+        animation: swipeHeader 5.75s;
+        animation-fill-mode: both;
+    }*/
+
+    /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+    @keyframes swipeHeader { 
+        from {top: -100vw;} /* This sets the position of the video text to above the viewport */
+        to {top: 0vw;} /* This moves the video text to the normal positioning on the viewport */
+    }
+
+    /*????????????????????*/
+    .Video_Body_Text {
+        background: #7700ff; /* This provides a semi-transparent background for the text to sit over */
+        color: white;
+        border-radius: 10px 50px;
+        width: 70%;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        filter: hue-rotate(50deg);
+    }
+
+    ul.no-bullets {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+      }
+
+/*TABLES -  this section covers the styling of the columns and rows within the table *****/
+    
+    * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
+        box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
+    } 
+
+    .Column_1 {
+        float: left;
+        border-radius: 10px 50px; 
+        width: 55%; /* This ensures the column takes up half of the page width */
+        padding: 10px;
+        padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+        margin-top: 7%;
+        height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+        background-color:#7700ff
+    }
+
+    /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+    @media screen and (max-width: 576px) {
+        .Column_1 {
+            overflow: auto;
+        }
+    }
+
+    .Column_2 {
+        float: right;
+        border-radius: 10px 50px; 
+        width: 35%; /* This ensures the column takes up half of the page width */
+        padding: 10px;
+        padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+        margin-top: 7%;
+        height: 350px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+        /*background-color: #B3FF00;*/
+    }
+        /*border-radius: 10px 50px;
+        border-top-left-radius: 50% 50%; 
+        border-top-right-radius: 50% 50%; 
+        border-bottom-right-radius: 50% 50%; 
+        border-bottom-left-radius: 50% 50%;
+        float: left;
+        width: 45%;
+        padding: 10px;
+        margin-top: 9%;
+        height: 400px;
+        background-color:rgba(0, 255, 234, 0.3);%/
+    
+
+    /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
+    /*.Column_tall {
+        padding-top: 3.5%;
+        height: 450px;
+    }*/
+
+    /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
+    .Row:after {
+        content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+        display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+        clear: both; /* This clears any other elements from floating on the left or the right of an element */
+    }
+
+    ul.no-bullets {
+        list-style-type: none; /* Remove bullets */
+        padding: 0;
+        margin: 0;
+    }
+
+
+/*FOOTER*/
+
+    footer {
+        padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+        /*background-color: white;*/
+        font-size: 8pt;
+    }
+
+
+
+/*MEDIA QUERY*/
+
+    /* The @media rule is used in media queries to apply different styles for different media/types of devices */
+    /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
+    @media screen and (max-width: 576px) {
+        img {
+            height: 100px;
+            margin-top: 150px;
+        }
+    }
+
+    /*Media rules for paragraph font size for different screen sizes*/
+    @media screen and (max-width: 527px) {
+        p {
+            font-size: 3.75vw;
+        }
+    }
+
+    @media screen and (min-width: 528px) and (max-width: 660px) {
+        p {
+            font-size: 3.5vw;
+        }
+    }
+
+    @media screen and (min-width: 661px) and (max-width: 799px) {
+        p {
+            font-size: 2.75vw;
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 924px) {
+        p {
+            font-size: 2.5vw;
+        }
+    }
+
+    @media screen and (min-width: 925px) and (max-width: 1050px) {
+        p {
+            font-size: 2.25vw;
+        }
+    }
+
+    @media screen and (min-width: 1051px) and (max-width: 1310px) {
+        p {
+            font-size: 2vw;
+        } 
+    }
+
+    @media screen and (min-width: 1311px) and (max-width: 1535px) {
+        p {
+            font-size: 1.75vw;
+        }
+    }
+
+    @media screen and (min-width: 1536px) and (max-width: 2269px) {
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    @media screen and (min-width: 2270px) {
+        p {
+            font-size: 1.35vw;
+        }
+    }
+
+    /*Media rule for navbar links for different screen sizes*/
+    /* Screens 1080px and smaller will display navbar links equally distributed */
+    @media screen and (max-width: 1080px) {
+        .Navbar a{
+            width: 20%; /* This sets each navbar link to 1/5 of the navbar */
+            font-size: 2.5vw;
+        }
+    }
+
+    /* Media rules to enlarge the font of the white text for smaller screens */
+    @media screen and (max-width: 1080px) {
+        .quote{
+            font-size: 3.5vw;
+        }
+
+        .white-text {
+            font-size: 4.5vw;
+        }
+    }
+
+    /* Media rules to increase the size of the columns for larger screens */
+    @media screen and (min-width: 1725px) {
+        .Column_1 {
+            height: 550px;
+        }
+        .Column_2 {
+            height: 550px;
+        }
+    }
+
+
+    /*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
+    @media screen and (min-width: 2000px) {
+        h1{
+            margin-top: 0;
+        }
+    }
