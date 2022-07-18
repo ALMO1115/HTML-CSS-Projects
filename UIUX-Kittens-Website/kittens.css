@@ -1,0 +1,71 @@
+/*font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;*/
+
+body {
+	background-color: #E6DAE3;
+}
+h1 {
+	font-family: 'Dancing Script', cursive;
+	background-color: #EDE19D;
+	color: #98678c;
+}
+
+p {
+	font-family: 'Cormorant Garamond', serif;
+	color: rgb(65, 65, 65);
+}
+
+button {
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	background-color: #e6b800;
+	font-size: 18px;
+	border-color: #98678c;	
+}
+
+button:hover {
+	font-family: 'Dancing Script', cursive;
+	color: #EDE19D;
+	background-color: #98678c;
+	font-size: 18px;
+	border-color: #E6DAE3;
+}
+
+a:hover {
+	background-color: #98678c;
+	font-family: 'Cormorant Garamond', serif;
+	color: #EDE19D;
+	font-style: bold;
+	padding: 2.3%;
+	font-size: 20px;
+}
+
+.active {
+	background-color: #e6b800;
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	font-size: 23px;
+	padding: 2%;
+}
+
+a {
+	background-color: #EDE19D;
+	font-family: 'Cormorant Garamond', serif;
+	color: #98678c;
+	font-style: bold;
+	padding: 2.3%;
+	font-size: 20px;
+}
+
+#borderimg {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(./images/BEST/border2.png) 30 stretch;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
