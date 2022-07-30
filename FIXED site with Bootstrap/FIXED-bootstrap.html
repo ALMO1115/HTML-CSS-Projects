@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FIXED Bootstrap Site</title>
+
+        <!-- Bootstrap 5 CSS & JS files-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- My CSS files * to use my own CSS in conjuction with my own, just link my own CSS file AFTER Bootstraps-->
+        <link rel="stylesheet" href="./fixed.css">
+    </head>
+    
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#Home" class="nav-item nav-link active">Home</a>
+                        <a href="#Biography" class="nav-item nav-link">Biography</a>
+                        <a href="#Filmography" class="nav-item nav-link">Filmography</a>
+                        <a href="#Photos" class="nav-item nav-link">Photos</a>
+                    </div>
+
+                    <!-- right side of nav bar -->
+                    <div class="navbar-nav ms-auto">
+                        <h5 class="text-warning">Harold Lloyd</h5>
+                        <!--
+                        <a href="#" class="nav-item nav-link">Register</a>
+                        <a href="#" class="nav-item nav-link">Login</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!-- HOME -->
+    <p id="Home">
+        <div class="bg-dark">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img src="./harold.jpg" alt="Harold Lloyd" style="width:300px;height:400px;">
+                  </div>
+                  <div class="col-sm">
+                    <h2 class="text-warning">
+                        About
+                    </h2>
+                    <small class="text-muted">
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </small>
+                  </div>
+                  <div class="col-sm">
+                    <h2 class="text-warning">Biography</h2>
+                    <small class="text-muted">
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </small>
+                    <br>
+                    <Br>
+                    <button type="button" class="btn btn-outline-warning">Read more...</button>
+                  </div>
+                </div>
+            </div>
+    </p>
+            <br>
+            <hr class="text-warning">
+            <br>
+
+    <!-- FILMOGRAPHY -->
+    <p id="Filmography">
+            <div class="container" id="Filmography">
+                <div class="container bcontent">
+                    <div class="text-warning">
+                        <h2>Filmography</h2>
+                        <small class="text-muted">*Click on movie title to watch the film!</small>
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr class="bg-secondary">
+                                    <th>Movie Title</th>
+                                    <th>Release Date</th>
+                                    <th>Leading Lady</th>
+                                    <th>Director</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-secondary">
+                                    <td><a class="text-warning" href="https://en.wikipedia.org/wiki/Harold_Lloyd">
+                                        Lorem Ipsum</a></td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                </tr>
+                                <tr class="bg-secondary">
+                                    <td><a class="text-warning" href="https://en.wikipedia.org/wiki/Harold_Lloyd">
+                                        Lorem Ipsum</a></td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                </tr>
+                                <tr class="bg-secondary">
+                                    <td><a class="text-warning" href="https://en.wikipedia.org/wiki/Harold_Lloyd">
+                                        Lorem Ipsum</a></td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                    <td>Lorem Ipsum</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </p>
+
+    <br>
+    <hr class="text-warning">
+    <br>
+
+    <!-- PHOTOS -->
+    <p id="Photos">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="" alt="Lorem Ipsum" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Lorem Ipsum" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="Lorem Ipsum" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+    </p>
+
+        <!-- Bootstrap JS file Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+    <br>
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg-dark">
+            <div class="container">
+                <small class="text-muted">Copyright ALMO1115.</small>
+            </div>
+        </div>
+    </footer>
+    <br>
+
+</html>

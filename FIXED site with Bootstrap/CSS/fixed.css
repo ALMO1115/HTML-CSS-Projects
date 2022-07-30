@@ -1,0 +1,44 @@
+/*using SASS*/
+/*changing fonts -- see also Prata on Google Fonts */
+
+/*this come from the import option on a Google Font instead of link option
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+/*this is supposed to be the SASS coding to replace Bootstrap's active font
+:root {
+    --bs-font-sans-serif: /*copy font name from Google Fonts here--- 'Limelight', cursive;
+    /*this was what it was in the tutorial
+    --bs-body-font-family:
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    }
+*/
+
+/*how to add any font from your desktop onto your website!*/
+@font-face {
+    font-family: 'Lucien';
+    src: url(./lucien-schoenschriftv-cat/Lucian\ Schoenschrift\ CAT.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url(./josefin-sans/JosefinSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+h1, h2, h5 {
+    font-family: 'Lucien';
+    font-size: 40pt;
+}
+
+
+body {
+    font-family: 'Josefin';
+    font-size: 16pt;
+}
