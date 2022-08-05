@@ -1,0 +1,28 @@
+/*how to add any font from your desktop onto your website!*/
+@font-face {
+    font-family: 'Lucien';
+    src: url("./fonts/lucien-schoenschriftv-cat/Lucian-Schoenschrift-CAT.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url("./fonts/josefin-sans/JosefinSans-Regular.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+h1, h2, h5 {
+    font-family: 'Lucien';
+    font-size: 40pt;
+}
+
+body {
+    font-family: 'Josefin';
+    font-size: 16pt;
+}
+
+#carousel {
+    font-weight: bold;
+}

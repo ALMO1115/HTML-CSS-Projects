@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIXED Bootstrap Layout Example</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- My CSS files * to use my own CSS in conjuction with my own, just link my own CSS file AFTER Bootstraps-->
+<link rel="stylesheet" href="./CSS/ALMOstyle.css">
+</head>
+
+<body class="bg-dark">
+
+<!--NAV BAR-->
+<section id="Home"></section>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!--<a class="navbar-brand">-->
+        <h5 class="text-warning">Harold Lloyd</h5><!--space between nav header and links-->&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#Home" class="nav-item nav-link active">Home</a>
+                <a href="#Biography" class="nav-item nav-link">Biography</a>
+                <a href="#Filmography" class="nav-item nav-link">Filmography</a>
+                <a href="#Album" class="nav-item nav-link">Album</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <h3 class="text-warning">Silent Film Pioneer</h3>
+                <!--
+                <a href="#" class="nav-item nav-link">Register</a>
+                <a href="#" class="nav-item nav-link">Login</a>
+                -->
+            </div>
+        </div>
+    </div>
+</nav>
+<br><br><br>
+<!--BIOGRAPHY-->
+<section id="Biography"></section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+    <!--<div class="p-5 my-4 bg-dark rounded-3">-->
+            <img src="./images/harold.jpg" alt="Harold Lloyd" style="width: 300px; height:400px;">
+        </div>
+    <div class="col-md-4">
+        <h1 class="text-warning">About the Legend</h1>
+        <div class="text-muted"><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <a href="https://en.wikipedia.org/wiki/Harold_Lloyd" class="text-warning" target="_blank">dolore magna</a> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p></div>
+        <p><a href="https://en.wikipedia.org/wiki/Harold_Lloyd" target="_blank" class="btn btn-warning btn-lg">Harold's Wikipedia page</a> | <small><a href="#Home" class="text-warning">Back to top</a></small></p>
+    </div>
+</div>
+
+    <br><br><br>
+    <!--FILMOGRAPHY-->
+    <section id="Filmography"></section>
+    <div class="container">
+    <!--<div class="row">
+        <div class="col-md-4">-->
+            <h2 class="text-warning">Filmography</h2>
+            <small class="text-muted">*Click on movie title to watch the film!</small>
+            <br><br>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr class="bg-secondary">
+                        <th>Movie Title</th>
+                        <th>Release Date</th>
+                        <th>Leading Lady</th>
+                        <th>Director</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-secondary">
+                        <td><a class="text-warning" href="https://youtu.be/93zvJb46gWw" target="_blank">
+                            Speedy</a></td>
+                        <td>May 4, 1928</td>
+                        <td>Ann Christy</td>
+                        <td>Ted Wilde</td>
+                    </tr>
+                    <tr class="bg-secondary">
+                        <td><a class="text-warning" href="https://youtu.be/GRUpZHZJJ1E" target="_blank">
+                            The Freshman</a></td>
+                        <td>September 20, 1925</td>
+                        <td>Jobyna Ralston</td>
+                        <td>Fred C. Newmeyer & Sam Taylor</td>
+                    </tr>
+                    <tr class="bg-secondary">
+                        <td><a class="text-warning" href="https://youtu.be/tGwuaj-jPI0" target="_blank">
+                            Grandma's Boy</a></td>
+                        <td>September 3, 1922</td>
+                        <td>Mildred Davis</td>
+                        <td>Fred C. Newmeyer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </p>
+            <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-warning">Learn More &raquo;</a> | <small><a href="#Home" class="text-warning">Back to top</a></small></p>
+    </div>
+
+    <br><br><br>
+    <!--ALBUM-->
+    <section id="Album"></section>
+    <div class="container">
+        <!--<div class="row">
+            <div class="col-md-4">-->
+            <h2 class="text-warning">Album</h2>
+    </div>
+    <br>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./images/harold4.jpg" alt="Lorem Ipsum" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3 class="bg-warning text-dark">Advertisement for movie release</h3>
+                <!--<p>Lorem Ipsum</p>-->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/harold3.jpg" alt="Safety Last" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3 class="bg-warning text-dark">Safety Last - 1923</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./images/harold2.jpg" alt="Lorem Ipsum" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3 class="bg-warning text-dark">Harold w/ wife and leading lady, Mildred Davis</h3>
+            </div>
+        </div>
+    </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!--
+        <div class="col-md-4">
+            <h2>Bootstrap</h2>
+            <p>Bootstrap is a powerful front-end framework for faster and easier web development. Our Bootstrap tutorials will help you to learn all the features of latest Bootstrap 4 framework so that you can easily create responsive websites.</p>
+            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-warning">Learn More &raquo;</a></p>
+        </div>
+        -->
+
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">Copyright &copy; 2021 Tutorial Republic</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-muted">Terms of Use</a> 
+                <span class="text-muted mx-2">|</span> 
+                <a href="#" class="text-muted">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Bootstrap JS file Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
