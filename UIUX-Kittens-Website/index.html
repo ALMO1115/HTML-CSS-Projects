@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   
+
+
+    <!--HEAD-->
+    <head>                     <!--meta relates to data about data - so, this tag conveys data to browsers and search engines (that isn't displayed to users), such as, description of page, keywords to help categorize information in the document, note the author, etc.-->
+        <meta charset="UTF-8"> <!--UTF-8 refers to the amount of bits used to relay data - in this case, using an 8 bit (1 byte) format. One or more bits represents individual characters. Ex: copyright symbol in UTF is U00A9 (the A comes from hexadecimal # system)-->
+        <meta name="viewport" content="width=device-width" /> <!--Viewport relates to the port in which you are viewing this website (could be an iPad, Samsung Smart Phone, desktop computer - each with their own dimensions). This is telling the website to fit the content within the confines of the width of the device used when viewing this website-->
+        <title>Kittens</title> <!--this is the text that displays on the tab within the broswer-->
+        <link rel="icon" type="image/x-icon" href="./images/computerpaint_fav.webp">
+        <link rel="stylesheet" type="text/css" href="./CSS/porfolio.css"> <!--this links a stylesheet/CSS file to the page to pull from for aesthetics/styling-->
+        <!--The 4 lines below all link and call special fonts from Google's font collections so that they can be used in the HTML document/this page-->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./JS/portfolio.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa&family=Dosis:wght@200&family=El+Messiri&family=Kanit:wght@600&family=Playfair+Display:ital@1&family=Staatliches&family=Ubuntu+Condensed&family=Ultra&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
+        <!--NAVIGATION BAR-->
+        <div class="Nav_Bar"> <!--div tag element defines a division/section in the HTML document. It is often used as a container for other elements to style/make specific changes to the content within the div tag (each div tag ends with "</div>" so we know when each dive starts and ends)-->
+            <a class="Active" href="#Home">Home</a> <!--the "a" tag defines a hyperlink and the "#"" before "Home" specifies an HTML element id to be scrolled/linked to (in this case, see the div below with the id, "Home")-->
+            <a href="#About">About Me</a> <!--the reason this nav bar link is just "a href" whereas the above one has a class id attached to it is because the design is to have the home button have a slighty differnt look/stands out from the other nav buttons-->
+            <a href="#UIUX">What is UI/UX?</a>
+            <a href="#Portfolio">Portfolio & Experience</a>
+            <!--<a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact Me</a> <!--the reason this nav link is differnt than the others is because it: 1) is using JS functions to call a pop form up instead of linking to a particular spot on the page 2) applies the "onclick" and "ondblclick" (on double click) events to this element. When clicked on or double clicked on, this nav link will call upon the functions (openForm, meant to open up the pop form -and- closeForm, meant to close the pop form out of view)-->
+        </div>
+    </head>
+    
+    
+    
+    <!--BODY-->
+
+    
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p class="center">&copy ALMO: copying or using my work without my permission is prohibited.
+                <br>
+            </p>
+        </footer>
+
+
+
+    </body>
+</html>

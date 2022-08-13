@@ -19,7 +19,7 @@
         <div class="Nav_Bar"> <!--div tag element defines a division/section in the HTML document. It is often used as a container for other elements to style/make specific changes to the content within the div tag (each div tag ends with "</div>" so we know when each dive starts and ends)-->
             <a class="Active" href="#Home">Home</a> <!--the "a" tag defines a hyperlink and the "#"" before "Home" specifies an HTML element id to be scrolled/linked to (in this case, see the div below with the id, "Home")-->
             <a href="#About">About Me</a> <!--the reason this nav bar link is just "a href" whereas the above one has a class id attached to it is because the design is to have the home button have a slighty differnt look/stands out from the other nav buttons-->
-            <a href="#UIUX">What is UI/UX?</a>
+            <a href="#UI-UX">What is UI/UX?</a>
             <a href="#Portfolio">Portfolio & Experience</a>
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact Me</a> <!--the reason this nav link is differnt than the others is because it: 1) is using JS functions to call a pop form up instead of linking to a particular spot on the page 2) applies the "onclick" and "ondblclick" (on double click) events to this element. When clicked on or double clicked on, this nav link will call upon the functions (openForm, meant to open up the pop form -and- closeForm, meant to close the pop form out of view)-->
         </div>
@@ -40,6 +40,7 @@
         </div>
         <!--VIDEO TEXT-->
         <div class="Video_Header_Text">
+            <p class="Center">
             <p class="Header_Text">DESIGNED BY AUDRA</p>
             <hr> <!--this creates a horizontal rule (line) and break within HTML. This tag is used specifically to signify a shift in topic - in this case signifying the change between the header and body content-->
             <strong> <!--everthing within this tag will be made "strong" or bolded-->
@@ -50,6 +51,7 @@
                     <br>Robin Matthews <!--within a <q> quote tag, <br> represents the source of the quote/the person who said it-->
                 </p>
             </strong>
+            </p>
         </div>
         
         <!-- 
@@ -84,15 +86,14 @@
                     <br><strong>HTML, CSS, Figma, Adobe Design Suite.</strong>
                 </p>
             </div>
+        </div>
 
 
         <!--ABOUT UI/UX SECTION-->
-        <div class="Row" id="UIUX">
+        <div class="Row" id="UI-UX">
             <!--LEFT COLUMN-->
             <div class="Column_1">
                 <h1>About UI/UX</h1>
-                <p class="Center"><p class="Quote">Hover over the image for more info!</p>
-                <p id="Keyframe">&#8669;</p>
                 <p>
                     <br>Are you looking to create a better user experience for your product?
                     <br>Are you looking to optimize response to your business?
@@ -102,13 +103,11 @@
             </div>
             <!--RIGHT COLUMN-->
             <div class="Column_2">
-                            <img id="Regular_Images" src="./images/flowchart-pexels-picjumbocom-196645.jpg" alt="Science & Art integrated">
-                        </div>
-                        <div class="Flip_Box_Back">
-                            <h2>Explanation of why need UI/UX or what it does...
-                            </h2>
-                        </div>
-                    </div>
+                <img id="Regular_Images" src="./images/flowchart-pexels-picjumbocom-196645.jpg" alt="Science & Art integrated">
+                </div>
+                <!--<div class="Flip_Box_Back">
+                    <h2>Explanation of why need UI/UX or what it does...
+                    </h2>-->
                 </div>
             </div>            
         </div>

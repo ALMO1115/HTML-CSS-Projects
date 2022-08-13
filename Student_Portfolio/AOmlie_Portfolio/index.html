@@ -9,7 +9,9 @@
         <link rel="icon" type="image/x-icon" href="./images/computerpaint_fav.webp">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa&family=Dosis:wght@200&family=El+Messiri&family=Kanit:wght@600&family=Playfair+Display:ital@1&family=Staatliches&family=Ubuntu+Condensed&family=Ultra&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">        <div class="Navbar">
+        <script src="./JS/portfolio.js"></script>
+        <!--link to call special fonts from Google collection--><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa&family=Dosis:wght@200&family=El+Messiri&family=Kanit:wght@600&family=Playfair+Display:ital@1&family=Staatliches&family=Ubuntu+Condensed&family=Ultra&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">        
+        <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#About">About Me</a>
             <a href="#AboutUIUX">About UI/UX</a>
@@ -20,6 +22,23 @@
         <!--space between navbar and first heading-->
         <br>
         <br>
+    </head>
+
+    <body>
+        <!--using this JS as an inline script vs loaded script src is necessary because it loads and functions quicker instead of waiting for the script src to load-->
+        
+        <!--LINE 1: script/JavaScript class to activate fade-out function of specifically labeled elements when the page loads-->
+
+        <!--LINE 2 & 3: removing the fade-out class from the body once the page is loaded (see line 3)-->
+            <!--add.EventListener: remember that Listeners are event handlers/functions that run as a response to an event (this event would be when the page loads, hence, 'DOMContentLoaded')-->
+
+        <!--code to call on JS and jQuery to load page in a fade in effect-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded'), () => {
+                document.body.classList.remove('fade-out');
+            };
+        </script>
 
         <!--Background video-->
         <div id="Home">
@@ -33,11 +52,11 @@
         <br>
         <!--Video text-->
         <div class="Video_Header_Text">
-            -------------------------------------------------------------------------------------------------------
+
             <p class="header-text">DESIGNED BY AUDRA</p>
-            <p class="quote">Design is where science and art break even."
-            <br>-Robin Mathew
-            </p>
+            <hr>
+            <p class="quote" style="font-size:2vw;">Design is where science and art break even."
+            <br><p style="font-size:2vw;">-Robin Mathew</p>
         </div>
         <br>
         <div class="Video_Body_Text">
@@ -52,6 +71,34 @@
             </strong>
         </div>
 
+        <!--AUTOMATIC SLIDESHOW OF PORTFOLIO SNIPPETS-->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--SLIDE 1 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiux1.jpeg" alt="not sure">
+                        <div class="slide_text">I am a UI designer....</div>
+                    </div>
+                    <!--SLIDE 2 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiux2.png" alt="still not sure">
+                        <div class="slide_text">What to say...</div>
+                    </div>
+                    <!--SLIDE 3 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiuix3.jpg" alt="get back to me">
+                    </div>
+                    <!--PREVIOUS OR NEXT BUTTONS-->
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -59,7 +106,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <img src="./images/allart-pexels-antoni-shkraba-4348401.jpg" alt="Lots of design going on!">
+                            <img id="regImgs" src="./images/allart-pexels-antoni-shkraba-4348401.jpg" alt="Lots of design going on!">
                         </div>
                         <div class="flip-box-back">
                             sample
@@ -86,7 +133,8 @@
         <!--Left column-->
         <div class="Column_1">
             <h1>About UI/UX</h1>
-            <p class="center"><p class="quote">&#8669; Hover over the image for more info! &#8669;</p></p>
+            <p class="center"><p class="quote">Hover over the image for more info!</p>
+            <p id="keyframe">&#8669;</p>
             <p>
                 <br>Are you looking to create a better user experience for your product?
                 <br>Are you looking to optimize response to your business?
@@ -99,7 +147,7 @@
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="./images/flowchart-pexels-picjumbocom-196645.jpg" alt="Science & Art integrated">
+                        <img id="regImgs" src="./images/flowchart-pexels-picjumbocom-196645.jpg" alt="Science & Art integrated" class="single-featured-image-header">
                     </div>
                     <div class="flip-box-back">
                         <h2>Explanation of why need UI/UX or what it does...
@@ -125,10 +173,22 @@
                         <li><p class="center"><a class="bodylinks" href="https://github.com/ALMO1115/developers.git" target="_blank">My Resume</a></p></li>
                     </ul>
                 </p>
+                <!--POP UP FORM-->
+                <button class="open-button" onclick="OpenForm()">Click here to receive portfolio addition notifications</button>.
+                
+                <div class="form-popup" id="popForm">
+                    <form action="" class="form-container">
+                        <h2>Portfolio Addition Notifications</h2>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
             </div>
             <!--Right column-->
             <div class="Column_2">
-                <img src="./images/uiuixcomputer2-pexels-fauxels-3184612.jpg" alt="UI/UX design in progress"></a>
+                <img id="regImgs" src="./images/uiuixcomputer2-pexels-fauxels-3184612.jpg" alt="UI/UX design in progress"></a>
             </div>
         </div>
 
@@ -136,19 +196,21 @@
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
             <div class="Column_2 Column_tall">
-                <img src="./images/colorfulcomputer2-pexels-junior-teixeira-2047905.jpg" alt="Contact_Image">
+                <img id="regImgs" src="./images/colorfulcomputer2-pexels-junior-teixeira-2047905.jpg" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
             <div class="Column_1 Column_tall">
                 <h1>Contact</h1>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <form name="myForm" action="" onsubmit="return validateForm()" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
+                        <input name="fname" type="text" placeholder="Please enter your name here" required>
                     <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <input name="email" type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
+                    <label>Phone Number:</label>
+                        <input type="text" id="Number" name="Number" placeholder="Please enter your phone number here">
                     <label>Message:</label>
-                        <input type="text" id="Message" placeholder="Please write your message here">
+                        <input name="message" type="text" id="Message" placeholder="Please write your message here" required>
                         <input type="submit" value="SUBMIT">
                     </form>
            </div>
@@ -160,6 +222,7 @@
                 <p class="center">&copy ALMO: copying or using my work without my permission is prohibited.</a></p>
                 <br>
             </p>
+
         </footer>
     </body>
 </html>

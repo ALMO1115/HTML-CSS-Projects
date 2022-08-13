@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Designed by Audra</title>
+        <link rel="stylesheet" type="text/css" href="./styling/portfolio.css">
+        <link rel="icon" type="image/x-icon" href="./images/computerpaint_fav.webp">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="./JS/portfolio.js"></script>
+        <!--link to call special fonts from Google collection--><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa&family=Dosis:wght@200&family=El+Messiri&family=Kanit:wght@600&family=Playfair+Display:ital@1&family=Staatliches&family=Ubuntu+Condensed&family=Ultra&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">        
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About Me</a>
+            <a href="#AboutUIUX">About UI/UX</a>
+            <a href="#Portfolio">Portfolio & Experience</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact Me</a> <!--the reason this nav link is differnt than the others is because it: 1) is using JS functions to call a pop form up instead of linking to a particular spot on the page 2) applies the "onclick" and "ondblclick" (on double click) events to this element. When clicked on or double clicked on, this nav link will call upon the functions (openForm, meant to open up the pop form -and- closeForm, meant to close the pop form out of view)-->
+        </div>
+
+        <!--space between navbar and first heading-->
+        <br>
+        <br>
+    </head>
+
+    <body>
+        <!--using this JS as an inline script vs loaded script src is necessary because it loads and functions quicker instead of waiting for the script src to load-->
+        
+        <!--LINE 1: script/JavaScript class to activate fade-out function of specifically labeled elements when the page loads-->
+
+        <!--LINE 2 & 3: removing the fade-out class from the body once the page is loaded (see line 3)-->
+            <!--add.EventListener: remember that Listeners are event handlers/functions that run as a response to an event (this event would be when the page loads, hence, 'DOMContentLoaded')-->
+
+        <!--code to call on JS and jQuery to load page in a fade in effect-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded'), () => {
+                document.body.classList.remove('fade-out');
+            };
+        </script>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="UIUX_video">
+                <source src="./videos/pexels-engin-akyurt-7217874.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <br>
+        <br>
+        <!--Video text-->
+        <div class="Video_Header_Text">
+
+            <p class="header-text">DESIGNED BY AUDRA</p>
+            <hr>
+            <p class="quote" style="font-size:2vw;">Design is where science and art break even."
+            <br><p style="font-size:2vw;">-Robin Mathew</p>
+        </div>
+        <br>
+        <div class="Video_Body_Text">
+            <strong>
+                <p class="center">
+                    <br>Hello and welcome!
+                    <br>My name is Audra and this is my portfolio website. Thank you for taking time to stop by!
+                    <br>Please enjoy examples of my work, as well as, details on my background and experience.
+                    <br>Please <a class="bodylinks" href="#Contact">reach out</a> for questions or any other information, you may be seeking.
+                    <br>I look forward to hearing from you!
+                </p>
+            </strong>
+        </div>
+
+        <!--AUTOMATIC SLIDESHOW OF PORTFOLIO SNIPPETS-->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--SLIDE 1 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiux1.jpeg" alt="not sure">
+                        <div class="slide_text">I am a UI designer....</div>
+                    </div>
+                    <!--SLIDE 2 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiux2.png" alt="still not sure">
+                        <div class="slide_text">What to say...</div>
+                    </div>
+                    <!--SLIDE 3 OF 3-->
+                    <div class="mySlides_fade">
+                        <img class="slideshow_images" id="slidepics" src="./images/uiuix3.jpg" alt="get back to me">
+                    </div>
+                    <!--PREVIOUS OR NEXT BUTTONS-->
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img id="regImgs" src="./images/allart-pexels-antoni-shkraba-4348401.jpg" alt="Lots of design going on!">
+                        </div>
+                        <div class="flip-box-back">
+                            sample
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Right column-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>
+                    I am a UI/UX designer who loves to problem solve!
+                    <br>I also love history, crafting with my hands,
+                    <br>and a good action movie. 
+                    <br>
+                    <br>I am a graduate of <a class="bodylinks" href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s UI/UX Design Boot Camp, 
+                    <br>and am trained and experienced in the following languages and programs: <strong>HTML, CSS, JavaScript, Figma, Adobe Suite.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!--About UI/UX section-->
+        <div class="Row" id="AboutUIUX">
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>About UI/UX</h1>
+            <p class="center"><p class="quote">Hover over the image for more info!</p>
+            <p id="keyframe">&#8669;</p>
+            <p>
+                <br>Are you looking to create a better user experience for your product?
+                <br>Are you looking to optimize response to your business?
+                <br>If the answer is yes, then you are looking for a UI/UX Designer!
+                <br>I would love to work with you on your project-<a class="bodylinks" href="#Contact">Contact me</a>!
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img id="regImgs" src="./images/flowchart-pexels-picjumbocom-196645.jpg" alt="Science & Art integrated" class="single-featured-image-header">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Explanation of why need UI/UX or what it does...
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--Portfolio section-->
+        <div class="Row" id="Portfolio">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>Portfolio & Experience</h1>
+                <p>
+                    You can view my design and research projects on these resources:
+                    <br>
+                    <ul class="no-bullets">
+                        <li><p class="center"><a class="bodylinks" href="https://github.com/ALMO1115/developers.git" target="_blank">My Portfolio</a></p></li>
+                        <li><p class="center"><a class="bodylinks" href="https://github.com/ALMO1115/developers.git" target="_blank">My GitHub</a></p></li>
+                        <li><p class="center"><a class="bodylinks" href="https://github.com/ALMO1115/developers.git" target="_blank">My Resume</a></p></li>
+                    </ul>
+                </p>
+                <!--POP UP FORM-->
+                <button class="open-button" onclick="OpenForm()">Click here to receive portfolio addition notifications</button>.
+                
+                <div class="form-popup" id="popForm">
+                    <form action="" class="form-container">
+                        <h2>Portfolio Addition Notifications</h2>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <img id="regImgs" src="./images/uiuixcomputer2-pexels-fauxels-3184612.jpg" alt="UI/UX design in progress"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img id="regImgs" src="./images/colorfulcomputer2-pexels-junior-teixeira-2047905.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form name="myForm" action="" onsubmit="return validateForm()" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input name="fname" type="text" placeholder="Please enter your name here" required>
+                    <label>Email:</label>
+                        <input name="email" type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
+                    <label>Phone Number:</label>
+                        <input type="text" id="Number" name="Number" placeholder="Please enter your phone number here">
+                    <label>Message:</label>
+                        <input name="message" type="text" id="Message" placeholder="Please write your message here" required>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+           </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy ALMO: copying or using my work without my permission is prohibited.</a></p>
+                <br>
+            </p>
+
+        </footer>
+    </body>
+</html>

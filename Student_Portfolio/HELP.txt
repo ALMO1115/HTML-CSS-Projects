@@ -1,0 +1,57 @@
+NOT WORKING
+	page fade in from white
+	pop up form
+	zoom in effect on portfolio and experience image
+	auto. slideshow not scrolling through images
+	how can i make "designed by audra" header a sticky element throughout the entire page?
+		<div class="sitcky"></div> <!--ending div tag from sticky div tab at top of page-->
+		A sticky element can only stick inside of its container, and it can only float above 
+		elements also contained in that same container, i.e., siblings of the sticky element.
+		-Create a sticky contact button on the bottom right of a web page.
+		-Make it so that a contact form pop ups when the sticky contact button is clicked.
+
+todo app html
+	-cant get the json to js object conversion to display in html
+	-cant get localstorage date to display in html
+
+
+to do with Final_Portfolio_Edit
+ - make sure some of the nav id names I changed sync with the CSS
+ -make sure the "DESIGNED BY AUDRA" is changed from a <p> element to an header (<h1,2...>) element and refelcted within the CSS
+ -check all ?'s within code to clarify what I may not understand
+	is div colum1 and colun_tall best way to organize/style this?
+	-check with formspree is best
+ -check what the differences are between labeling left and right columns with picture and text with "Column1" and "Column2" might need to rename?
+ -can get rid of the "bodylinks" class?
+
+need to compare and possibly add to my website code
+-contact form styling
+-pop form styling
+arrow pointing animation
+zoominsinglefeatured
+sticky elements\
+-header text 2 (don't need it?)
+
+
+FIGURE OUT THE ANSWER TO THESE
+18. True or False: The += operator can be used to concatenate a string.
+
+Incorrect Answer: False
+
+16. What is the data type of an array?
+
+Incorrect Answer: String
+
+36. Which of the following is best defined as “a special part of a class that describes the default state of any new instance of that class”?
+
+Incorrect Answer: Property
+
+
+37. True or False: Vanilla JavaScript refers to JavaScript libraries or frameworks.
+
+Incorrect Answer: True
+
+40. Which of the following is not a primitive data type in JavaScript?
+
+Incorrect Answer: Boolean  
+CORRECT: i think it's object- i toggled back and forth between these 2
